@@ -14,6 +14,16 @@ namespace Day6Problem
         {
             this.No = prime;
         }
+        public static PrimeNumber UserInputForPrimeNumber()
+        {
+            Console.WriteLine("Enter the Number to Check Number is Prime or Not : ");
+            int pn = Convert.ToInt32(Console.ReadLine());
+
+            return new PrimeNumber(pn)
+            {
+                No = pn
+            };
+        }
         public void CheckPrimeNumber()
         {
             int flag = 0;   

@@ -14,6 +14,16 @@ namespace Day6Problem
         {
             this.pNumber = pNumber;
         }
+        public static PerfectNumber UserInputForPerfectNumber()
+        {
+            Console.WriteLine("Enter the Number to Check Number is Perfect or Not : ");
+            int n = Convert.ToInt32(Console.ReadLine());
+
+            return new PerfectNumber(n)
+            {
+                pNumber = n
+            };
+        }
         public void CheckPerfectNumber()
         {
             int sum = 0;

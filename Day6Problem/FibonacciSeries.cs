@@ -15,6 +15,16 @@ namespace Day6Problem
         {
             Number = number;
         }
+        public static FibonacciSeries UserInputForFibonacciSeries()
+        {
+            Console.WriteLine("Enter the Number of Elements : ");
+            int num = Convert.ToInt32(Console.ReadLine());
+
+            return new FibonacciSeries(num)
+            {
+                Number = num
+            };
+        }
         public void CalculateFibonacciSeries()
         {
             int num1 = 0,num2 = 1,num3;
